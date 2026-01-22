@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
     justify-content: space-between;
 }
 
@@ -71,6 +71,7 @@ body {
     text-align: justify;
     line-height: 1.5;
     font-family: 'Jersey 25';
+    font-size: 17px;
 }
 
 .img1 {
@@ -86,4 +87,43 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 20px;
+}
+
+.img3 {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.s3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.d3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.tittle4 {
+    font-family: 'FonteDoJogo';
+    font-size: 25px;
+}
+
+.p3 {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: 'Jersey 25';
+    font-size: 19px;
+}
+
+.button {
+    width: 420px;
 }
