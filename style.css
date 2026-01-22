@@ -16,6 +16,12 @@
 
 body {
     font-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    flex: 1;
 }
 
 .cabecalho {
@@ -31,20 +37,29 @@ body {
 .tittle {
     font-family: 'FonteDoJogo';
     font-size: 50px;
+    text-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
 }
 
 .icons {
     display: flex;
     gap: 60px;
+    
 }
 
 .icons-menu {
     font-family: 'FonteDoJogo';
     font-size: 20px;
+    color: #35f27a;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.icons-menu:hover {
+    color: #d4af37;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.6);
 }
 
 .conteudo {
-
+    flex: 1;
 }
 
 .s1 {
@@ -72,29 +87,93 @@ body {
     line-height: 1.5;
     font-family: 'Jersey 25';
     font-size: 17px;
+    letter-spacing: 1.5px;
 }
 
 .img1 {
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
-    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    box-shadow: 7px 12px 32px rgb(0, 0, 0);
     margin: 20px;
+}
+
+.img1:hover {
+    transform: scale(1.05);
+    transform: transform 3.0s;
 }
 
 .s2 {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center ;
     padding: 20px;
+    width: 100%;
+    min-height: 500px;
+    background-image: url(./img/banner-jogo.png);
+    background-size: cover;
+    background-position: 55% center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.img3 {
-    width: 100%;
-    max-width: 600px;
+.s2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.d2 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px 50px;
     border-radius: 15px;
-    box-shadow: 5px 10px 30px rgb(0, 0, 0);
-    margin: 20px;
+}
+
+
+.d2:hover {
+    transform: scale(1.02);
+    transform: transform 0.85s;
+}
+
+.tittle3 {
+    font-family: 'FonteDoJogo';
+    font-size: 25px;
+    color:#d4af37;
+    letter-spacing: 2px;
+    text-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+}
+
+.tittle3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #d4af37;
+}
+
+.p2 {
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Jersey 25';
+    font-size: 19px;
+    padding: 10px; 
+}
+
+.p2:hover {
+    transform: scale(1.05);
+    transform: transform 3.0s;
+}
+
+
+.p2::before {
+    content: "✦ ";
 }
 
 .s3 {
@@ -122,8 +201,39 @@ body {
     line-height: 1.5;
     font-family: 'Jersey 25';
     font-size: 19px;
+    letter-spacing: 2px;
 }
 
-.button {
-    width: 420px;
+.img3 {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 7px 12px 32px;
+}
+
+.img3:hover {
+    transform: scale(1.05);
+    transform: transform 3.0s;
+}
+
+.footer-minimal {
+    background-color: black;
+    padding: 12px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-minimal p {
+    color: aliceblue;
+    font-family: 'FonteDoJogo';
+    font-size: 20px;
+    text-shadow: 0 0 15px rgba(60, 255, 0, 0.5);
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;   
 }
