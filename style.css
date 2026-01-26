@@ -18,6 +18,14 @@ body {
     font-size: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "Jersey 25";
+    background: linear-gradient(
+        135deg,
+        #021108 10%,
+        #11301b 50%,
+        #080f0b 90%
+    );
+    color: #e6e6e6;
 }
 
 .conteudo{
@@ -34,8 +42,11 @@ body {
     color: aliceblue;
 }
 
+.titulo-jogo {
+    font-family: "FonteDoJogo";
+}
+
 .tittle {
-    font-family: 'FonteDoJogo';
     font-size: 50px;
     text-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
 }
@@ -43,7 +54,6 @@ body {
 .icons {
     display: flex;
     gap: 60px;
-    
 }
 
 .icons-menu {
@@ -78,29 +88,28 @@ body {
 }
 
 .tittle2 {
-    font-family: 'FonteDoJogo';
     font-size: 25px;
 }
 
 .p1 {
     text-align: justify;
-    line-height: 1.5;
-    font-family: 'Jersey 25';
+    line-height: 1.7;
     font-size: 17px;
     letter-spacing: 1.5px;
+    max-width: 900px;
 }
 
 .img1 {
     width: 100%;
     max-width: 600px;
-    border-radius: 15px;
-    box-shadow: 7px 12px 32px rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow: 0px 14px 35px rgb(0, 0, 0, 0.8);
     margin: 20px;
+    transition: transform 0.3s ease;
 }
 
 .img1:hover {
-    transform: scale(1.05);
-    transform: transform 3.0s;
+    transform: scale(1.015);
 }
 
 .s2 {
@@ -115,6 +124,9 @@ body {
     background-position: 55% center;
     background-repeat: no-repeat;
     position: relative;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+    background-color: #0f1a14;
+   
 }
 
 .s2::before {
@@ -122,6 +134,7 @@ body {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
 }
 
 .d2 {
@@ -133,16 +146,14 @@ body {
     background: rgba(0, 0, 0, 0.45);
     padding: 30px 50px;
     border-radius: 15px;
+    transition: transform 0.3s;
 }
-
 
 .d2:hover {
     transform: scale(1.02);
-    transform: transform 0.85s;
 }
 
 .tittle3 {
-    font-family: 'FonteDoJogo';
     font-size: 25px;
     color:#d4af37;
     letter-spacing: 2px;
@@ -155,22 +166,20 @@ body {
     width: 80px;
     height: 3px;
     margin: 10px auto;
-    background-color: #d4af37;
+    background-color: #1faa59;
 }
 
 .p2 {
     text-align: center;
     line-height: 1.5;
-    font-family: 'Jersey 25';
     font-size: 19px;
     padding: 10px; 
 }
 
 .p2:hover {
     transform: scale(1.05);
-    transform: transform 3.0s;
+    transform: transform 0.50s;
 }
-
 
 .p2::before {
     content: "✦ ";
@@ -192,28 +201,27 @@ body {
 }
 
 .tittle4 {
-    font-family: 'FonteDoJogo';
     font-size: 25px;
 }
 
 .p3 {
     text-align: justify;
-    line-height: 1.5;
-    font-family: 'Jersey 25';
+    line-height: 1.7;
     font-size: 19px;
     letter-spacing: 2px;
+    max-width: 590px;
 }
 
 .img3 {
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
-    box-shadow: 7px 12px 32px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease;
 }
 
 .img3:hover {
-    transform: scale(1.05);
-    transform: transform 3.0s;
+    transform: scale(1.015);
 }
 
 .footer-minimal {
@@ -225,10 +233,9 @@ body {
 }
 
 .footer-minimal p {
-    color: aliceblue;
-    font-family: 'FonteDoJogo';
-    font-size: 20px;
-    text-shadow: 0 0 15px rgba(60, 255, 0, 0.5);
+    font-size: 15px;
+    color: #bcbcbc;
+    letter-spacing: 1px;
 }
 
 .div-footer {
@@ -237,3 +244,17 @@ body {
     align-items: center;
     justify-content: space-around;   
 }
+
+main section {
+    padding: 100px 0;
+}
+
+main section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #1faa59;
+}
+
